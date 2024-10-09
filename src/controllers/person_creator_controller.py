@@ -23,7 +23,7 @@ class PersonCreatorController(PersonCreatorControllerInterface):
 
     def __validate_first_name_and_last_name(self, first_name: str, last_name: str) -> None:
         # Expressão Regular para caractere que nao são letras.
-        non_valid_caracteres = re.compile(r'[^a-Za-Z]')
+        non_valid_caracteres = re.compile(r'[^a-zA-Z]')
 
         if non_valid_caracteres.search(first_name) or non_valid_caracteres.search(last_name):
             raise Exception("Nome da pessoa inválido!")
