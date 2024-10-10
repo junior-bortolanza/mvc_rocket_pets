@@ -2,13 +2,13 @@ import pytest
 from src.controllers.person_creator_controller import PersonCreatorController
 
 class MockPeopleRepository:
-    def insert_person(self, first_name: str, last_name: str, age: int, pet_id: int):
+    def insert_person(self, first_name: str, last_name: str, age: int, pet_id: int) -> None:
         pass
 
 def test_create():
     person_infor = {
         "first_name": "Fulano",
-        "last_name": "deTal",
+        "last_name": "de Tal",
         "age": 30,
         "pet_id": 123
     }
