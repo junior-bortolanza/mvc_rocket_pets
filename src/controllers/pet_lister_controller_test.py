@@ -8,19 +8,19 @@ class MockPetsRepository:
             PetsTable(name="Buddy", type="Dog", id=47)
         ]
 
-    def test_list_pets():
-        controller = PetListerController(MockPetsRepository())
-        response = controller.list()
+def test_list_pets():
+    controller = PetListerController(MockPetsRepository())
+    response = controller.list()
 
-        expected_response = {
-            "data": {
-                "type": "Pets",
-                "count": 2,
-                "attributes": [
-                    {"name":"Fluffly", "id": 4},
-                    {"name":"Buddy", "id": 47},
-                ]
-            }
+    expected_response = {
+        "data": {
+            "type": "Pets",
+            "count": 2,
+            "attributes": [
+                {"name":"Fluffly", "id": 4},
+                {"name":"Buddy", "id": 47},
+            ]
         }
+    }
 
-        assert response == expected_response
+    assert response == expected_response
