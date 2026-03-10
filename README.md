@@ -1,4 +1,3 @@
-````markdown
 # MVC Rocket Pets
 
 Backend project developed in Python following the **MVC architectural pattern**, with clear separation of responsibilities between controllers, views, validators, models, and error handling.
@@ -193,28 +192,13 @@ Some possible next steps for this project:
 Project available at:
 [https://github.com/junior-bortolanza/mvc_rocket_pets](https://github.com/junior-bortolanza/mvc_rocket_pets)
 
-````
 
-```markdown
 # Alternative Shorter Opening
 
 A Python backend project built with an MVC-based architecture to practice clean code organization, validation flow, business logic separation, and maintainable API design.
-````
 
-```markdown
+
+
 # Recruiter-Friendly Summary
 
 This project showcases backend development skills in Python through a structured MVC application, emphasizing clean architecture principles, validation layers, error handling, and separation of concerns.
-```
-
-```markdown
-# Suggested Next Upgrade
-
-I can also turn this into a more premium README version with:
-
-- badges
-- clickable table of contents
-- endpoints section
-- skills demonstrated section
-- portfolio-style presentation
-```
